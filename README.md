@@ -1,13 +1,21 @@
 # Copilot-Instructions
 
-This repository contains a script to initialize GitHub Copilot with custom instructions for your project.
+This repository contains scripts to initialize GitHub Copilot with custom instructions for your project.
 
 ## Quick Setup
 
-To download and run the initialization script directly, use the following command:
+### Linux/macOS (Bash)
+To download and run the initialization script directly:
 
 ```bash
 curl -sSL https://raw.githubusercontent.com/acloudtechie/Copilot-Instructions/main/initialize-copilot.sh | bash
+```
+
+### Windows (PowerShell)
+To download and run the PowerShell script directly:
+
+```powershell
+Invoke-Expression (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/acloudtechie/Copilot-Instructions/main/initialize-copilot.ps1" -UseBasicParsing).Content
 ```
 
 ## What it does
@@ -15,10 +23,11 @@ curl -sSL https://raw.githubusercontent.com/acloudtechie/Copilot-Instructions/ma
 The script will:
 1. Create a `.github/prompts` directory in your project
 2. Download the Copilot instructions as `init.prompt.md`
-3. Checks if the file already exists to avoid overwriting customizations
+3. Check if the file already exists to avoid overwriting customizations
 
 ## Manual Setup
 
+### Linux/macOS (Bash)
 If you prefer to run the script manually:
 
 1. Download the script:
@@ -34,6 +43,24 @@ If you prefer to run the script manually:
 3. Run the script:
    ```bash
    ./initialize-copilot.sh
+   ```
+
+### Windows (PowerShell)
+If you prefer to run the PowerShell script manually:
+
+1. Download the script:
+   ```powershell
+   Invoke-WebRequest -Uri "https://raw.githubusercontent.com/acloudtechie/Copilot-Instructions/main/initialize-copilot.ps1" -OutFile "initialize-copilot.ps1"
+   ```
+
+2. Run the script:
+   ```powershell
+   .\initialize-copilot.ps1
+   ```
+
+   **Note**: You may need to adjust PowerShell execution policy if you encounter restrictions:
+   ```powershell
+   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
    ```
 
 ## Using the Copilot Instructions
