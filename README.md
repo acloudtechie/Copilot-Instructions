@@ -35,3 +35,22 @@ If you prefer to run the script manually:
    ```bash
    ./initialize-copilot.sh
    ```
+
+## Using the Copilot Instructions
+
+After running the script, you can use the downloaded Copilot instructions in VS Code:
+
+1. **Open VS Code** in your project directory
+2. **Activate GitHub Copilot Chat** (Ctrl+Shift+I or Cmd+Shift+I)
+3. **Use the init prompt** by typing:
+   ```
+   /init
+   ```
+4. This will load the comprehensive Copilot setup instructions from `.github/prompts/init.prompt.md`
+5. Follow the guidance provided to create project-specific prompts and configurations
+
+The `/init` command in agent mode will help you:
+- Analyze your project structure and technology stack
+- Generate tailored Copilot instructions for your specific project
+- Create custom prompt templates for development workflows
+- Set up project-specific documentation and coding standards
