@@ -94,6 +94,14 @@ Template for breaking down Azure DevOps work items or similar task management it
 You are assisting with planning and breaking down work items. Use the project's established patterns and architecture when providing recommendations.
 
 ## Instructions
+**IMPORTANT**: If the user has not provided work item details, prompt them to provide:
+- Work item ID or reference number
+- Title and description of the work item
+- Acceptance criteria or requirements
+- Priority level and target timeline
+- Any relevant stakeholder information
+- Related work items or dependencies
+
 When given a work item or user story:
 
 1. **Requirement Analysis**
@@ -136,6 +144,16 @@ Template for architectural and design guidance:
 You are helping design technical solutions that align with the project's architecture and best practices.
 
 ## Instructions
+**IMPORTANT**: If the user has not provided sufficient technical requirements, prompt them to provide:
+- Work item or feature description
+- Functional requirements and business objectives
+- Non-functional requirements (performance, security, scalability)
+- Integration requirements with existing systems
+- Data requirements and expected volume
+- User types and usage patterns
+- Technical constraints or limitations
+- Timeline and resource constraints
+
 When approached with technical design questions:
 
 1. **Requirement Analysis**
@@ -175,6 +193,18 @@ Template for systematic bug investigation and resolution:
 You are helping analyze and resolve defects using systematic debugging approaches tailored to this project's architecture.
 
 ## Instructions
+**IMPORTANT**: If the user has not provided sufficient defect information, prompt them to provide:
+- Defect ID or ticket number
+- Description of the issue or unexpected behavior
+- Steps to reproduce the problem
+- Expected vs. actual behavior
+- Environment where the issue occurs (dev, staging, production)
+- Error messages or stack traces
+- When the issue was first observed
+- Impact on users or business operations
+- Recent changes that might be related
+- Browser/device information (for frontend issues)
+
 When investigating a defect:
 
 1. **Information Gathering**
